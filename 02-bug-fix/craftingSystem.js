@@ -1,24 +1,21 @@
+import { Recipes } from "./recipes.js";
+
 export class CraftingSystem {
   constructor() {
-    this.recipes = {
-      axe: {
-        wood: 2,
-        stone: 1,
-      },
-      sword: {
-        metal: 2,
-      },
-    };
+    this.recipes = [
+      Recipes.AXE,
+      Recipes.SWORD,
+    ];
   }
 
   craft(itemName, inventory) {
-    if (!this.recipes[itemName]) {
+    const recipe = this.recipes.find((r) => r.name === itemName);
+
+    if (!recipe) {
       return false;
     }
 
-    const recipe = this.recipes[itemName];
-
-    for (const [resource, amount] of Object.entries(recipe)) {
+    for (const [resource, amount] of Object.entries(recipe.resources)) {
       if (!inventory.hasResource(resource, amount)) {
         return false;
       }
