@@ -59,12 +59,7 @@ A crafting system for a game has a known bug. Use TDD to write a failing test th
 
 **The goal:** To learn how TDD can be used to reproduce and fix bugs in a safe and controlled way.
 
-### Ex. 3: Order Confirmation
-An order confirmation service needs to send emails when orders are placed. Write tests first using mocks for the email dependency, then implement the service.
-
-**The goal:** To practice TDD with dependencies, using mocks to isolate the unit under test and verify its behavior.
-
-### Ex. 4: FizzBuzz
+### Ex. 3: FizzBuzz
 Implement the classic FizzBuzz kata using TDD. 
 
 Given a number `n`, the function should return the number as a string, unless it is divisible by 3 (return `Fizz`), or 5 (return `Buzz`), or both (return `FizzBuzz`)
@@ -72,3 +67,8 @@ Given a number `n`, the function should return the number as a string, unless it
 Example of progression: `1, 2, Fizz, 4, Buzz, Fizz`
 
 **The goal:** To practice the full TDD cycle on a small, well-defined problem — focusing on writing one test at a time and letting the tests drive the implementation incrementally.
+
+### Ex. 4: Order Confirmation
+An order confirmation service needs to send emails when orders are placed. Write tests first using mocks for the email dependency, then implement the service.
+
+**The goal:** To practice TDD with dependencies, using mocks to isolate the unit under test and verify its behavior.
