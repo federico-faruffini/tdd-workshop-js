@@ -71,4 +71,15 @@ Example of progression: `1, 2, Fizz, 4, Buzz, Fizz`
 ### Ex. 4: Order Confirmation
 An order confirmation service needs to send emails when orders are placed. Write tests first using mocks for the email dependency, then implement the service.
 
+#### Requirements
+Given an order confirmation service, we want our piece of code to:
+
+- send a confirmation email when the order is paid
+- send the email to the customer email address
+- include the order number in the confirmation email
+- include the total amount in the confirmation email
+- not send any email when the order is not paid
+- not send any email when the customer email address is missing
+- not send the confirmation email twice for the same order
+
 **The goal:** To practice TDD with dependencies, using mocks to isolate the unit under test and verify its behavior.
