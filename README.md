@@ -63,3 +63,16 @@ A crafting system for a game has a known bug. Use TDD to write a failing test th
 An order confirmation service needs to send emails when orders are placed. Write tests first using mocks for the email dependency, then implement the service.
 
 **The goal:** To practice TDD with dependencies, using mocks to isolate the unit under test and verify its behavior.
+
+### Ex. 4: FizzBuzz
+Implement the classic FizzBuzz kata using TDD. 
+
+Given a number `n`, the function should return:
+- `"FizzBuzz"` if `n` is divisible by both 3 and 5
+- `"Fizz"` if `n` is divisible by 3
+- `"Buzz"` if `n` is divisible by 5
+- the number as a string otherwise (e.g. `"7"`)
+
+Example of progression: `1, 2, Fizz, 4, Buzz, Fizz`
+
+**The goal:** To practice the full TDD cycle on a small, well-defined problem — focusing on writing one test at a time and letting the tests drive the implementation incrementally.
