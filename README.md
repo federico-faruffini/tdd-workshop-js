@@ -67,11 +67,7 @@ An order confirmation service needs to send emails when orders are placed. Write
 ### Ex. 4: FizzBuzz
 Implement the classic FizzBuzz kata using TDD. 
 
-Given a number `n`, the function should return:
-- `"FizzBuzz"` if `n` is divisible by both 3 and 5
-- `"Fizz"` if `n` is divisible by 3
-- `"Buzz"` if `n` is divisible by 5
-- the number as a string otherwise (e.g. `"7"`)
+Given a number `n`, the function should return the number as a string, unless it is divisible by 3 (return `Fizz`), or 5 (return `Buzz`), or both (return `FizzBuzz`)
 
 Example of progression: `1, 2, Fizz, 4, Buzz, Fizz`
 
